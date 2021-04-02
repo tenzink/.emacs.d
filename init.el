@@ -1,3 +1,5 @@
+(add-hook 'window-setup-hook 'toggle-frame-maximized t)
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
@@ -6,8 +8,6 @@
   (when (file-exists-p customization-file)
     (setq custom-file customization-file)
     (load custom-file 'noerror)))
-
-(add-hook 'window-setup-hook 'toggle-frame-maximized t)
 
 ;; no-littering is useful to de-clutter my /.emacs.d directory
 (setq no-littering-etc-directory
