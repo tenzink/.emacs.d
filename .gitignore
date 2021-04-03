@@ -3,3 +3,4 @@ elpa/
 url/
 *.el~
 /data/
+/server/
