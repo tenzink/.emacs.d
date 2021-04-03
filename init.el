@@ -35,3 +35,5 @@
 
 (column-number-mode t)
 (electric-pair-mode t)
+
+(use-package json-navigator)
