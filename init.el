@@ -33,9 +33,18 @@
 (set-keyboard-coding-system 'utf-8)
 (setq default-buffer-file-coding-system 'utf-8)
 
-(column-number-mode t)
+(column-number-mode 1)
+(line-number-mode 1)
+(display-time-mode t)
 (electric-pair-mode t)
+(savehist-mode)
 
 (use-package json-navigator)
+
+(customize-set-variable 'inhibit-startup-screen t) ; no splash screen on start
+(tool-bar-mode -1)   ; no tool bar with icons
+(customize-set-variable 'auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
+(customize-set-variable 'backup-directory-alist `((".*" . ,temporary-file-directory)))
+
 (use-package magit)
 (require 'magit)
