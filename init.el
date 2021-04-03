@@ -37,3 +37,5 @@
 (electric-pair-mode t)
 
 (use-package json-navigator)
+(use-package magit)
+(require 'magit)
